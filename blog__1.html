@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automating BTEB Failed Subject Filtering with Python 🚀</title>
+ <!-- Font Awesome for icons -->
+ <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+ <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        main {
+            padding: 20px;
+        }
+        article {
+            background: #fff;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .blog-images {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+        .blog-images img {
+            width: calc(33.33% - 10px);
+            height: auto;
+            margin-bottom: 15px;
+        }
+        #comments {
+            background: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        #comments h3 {
+            margin-bottom: 10px;
+        }
+        textarea {
+            width: 100%;
+            height: 80px;
+            margin-bottom: 10px;
+        }
+        button {
+            background: #333;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Automating BTEB Failed Subject Filtering with Python 🚀</h1>
+        <nav class="navbar navbar-expand-lg navbar-dark custom-navbar sticky-top transparent-nav fixed-top p-1">
+            <div class="container">
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Team</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <main>
+        <article>
+            <h1>Automating BTEB Failed Subject Filtering with Python 🚀</h1>
+            <div class="blog-images">
+                <img src="/Blog_1 Picture/blog_pic1.jpg" alt="Blog Picture 1">
+                <img src="/Blog_1 Picture/blog_pic2.jpg" alt="Blog Picture 2">
+                <img src="/Blog_1 Picture/blog_pic3.jpg" alt="Blog Picture 3">
+            </div>
+            <p class="date">Published on: <span id="date"></span></p>
+            <h2>Introduction</h2>
+            <p>In the academic world, managing student results is a crucial but often tedious task. Especially in polytechnic institutions, where results are published by the Bangladesh Technical Education Board (BTEB), extracting and analyzing failed subjects manually can be an overwhelming process. Teachers and administrators spend hours filtering failed subjects, matching roll numbers with sub_codes, and compiling data for further processing.
+
+                To simplify this struggle, I developed a Python-based automation tool that drastically reduces the time and effort required for this task. What once took hours is now accomplished in seconds!</p>
+            <h2>The Problem: Manual Filtering of Failed Subjects 😩</h2>
+            <p>Traditionally, filtering failed subjects from BTEB results is a time-consuming, error-prone process. Here’s<br>
+
+                ✅ Results need to be manually checked for each student.<br>    
+
+                ✅ Failed subjects must be identified and matched with the corresponding sub_code.<br>
+
+                ✅ Roll numbers of students who failed a subject must be listed under the respective sub_code.<br>
+
+                ✅ The final data needs to be structured properly and exported into an Excel file for further analysis.<br>
+                
+                This entire process is tedious, especially when dealing with a large number of students. Recognizing this pain point, I decided to build an automated Python tool to streamline the task.</p>
+
+            <h2>The Solution: A Python Tool to Automate the Process 🛠️</h2>
+            <p>My Python-based automation tool takes raw BTEB result data and processes it efficiently, providing structured, error-free output within seconds.</p>
+            <h2>Key Features of the Tool:</h2>
+            <p>✅ Automatic Extraction of Failed Subjects: The tool scans student results and identifies failed subjects instantly.<br>
+                ✅ Column-Wise Organization by Sub_Code: It categorizes failed subjects by their respective sub_code.<br>
+                ✅ Roll Number Sorting Under Each Failed Subject: Each failed student’s roll number is automatically assigned to the corresponding failed subject.<br>
+                ✅ Excel Export: The processed data is exported neatly into an Excel file, making it easy for teachers to review and analyze.</p>
+            <h2>How It Works ⚙️</h2>
+            <h4>The tool follows a simple yet effective workflow:</h4>
+            <p>1. Input Data: The user uploads the raw BTEB result file (CSV/Excel format).<br>
+
+
+              2.  Processing: The Python script extracts necessary details, identifying failed subjects and organizing them accordingly.<br>
+
+                
+              3.  Data Structuring: The tool creates separate columns for each sub_code and places roll numbers under the corresponding subject.<br>
+                
+              4.  Export: The final structured data is saved in an Excel file, ready for use.</p>
+            <h2>Why This Matters 💡</h2>
+            <p>Teachers and administrators often deal with hundreds or even thousands of student records. A manual approach not only takes time but also increases the risk of errors. By automating this process:<br>
+
+                🚀 Efficiency Increases: Hours of manual work are reduced to just a few seconds.<br>
+                📊 Accuracy Improves: Eliminates human errors in data processing.<br>
+                🖥️ Simplifies Workflow: Teachers can focus on academic tasks rather than repetitive administrative work.</p>
+            <h2>Future Enhancements 🔥</h2>
+            <p>While the tool is already making a big impact, there are several improvements planned for the future:<br>
+                ✅ Web-Based Interface: Converting the tool into a user-friendly web application.<br>
+                ✅ Database Integration: Storing and retrieving student records dynamically.<br>
+                ✅ Advanced Reporting: Generating detailed failure analysis and trends over semesters.</p>
+            <h2>Conclusion 🎉</h2
+             p-1>Automating the filtering of failed subjects in BTEB results is a game-changer for polytechnic institutions. By leveraging Python’s automation capabilities, we can save time, reduce errors, and enhance the overall efficiency of result management. This tool is just the beginning of a journey towards smarter, more streamlined academic processes.</p>   
+        </article>
+        
+        <section id="comments">
+            <h3>Comments</h3>
+            <ul id="commentList"></ul>
+            <textarea id="commentInput" placeholder="Write a comment..."></textarea>
+            <button onclick="addComment()">Post Comment</button>
+        </section>
+            <!-- Footer -->
+    <footer class="footer py-4 bg-dark">
+        <div class="container">
+            <div class="text-center text-white">
+                <p class="mb-0">© 2025 BCD Team & Abu Sayed. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script ></script>
+    <script ></script>
+    <script>
+        document.getElementById("date").innerText = new Date().toLocaleDateString();
+
+        function addComment() {
+            let commentInput = document.getElementById("commentInput");
+            let commentList = document.getElementById("commentList");
+            
+            if (commentInput.value.trim() !== "") {
+                let li = document.createElement("li");
+                li.textContent = commentInput.value;
+                commentList.appendChild(li);
+                commentInput.value = "";
+            }
+        }
+    </script>
+</body>
+</html>
